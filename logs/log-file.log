@@ -1,0 +1,25 @@
+11 авг. 2024 - 16:54:30.515 INFO  c.e.TaskManagementSystemApplication - Starting TaskManagementSystemApplication using Java 17.0.7 with PID 12296 (C:\Projects\TaskManagementSystem\target\classes started by HP in C:\Projects\TaskManagementSystem)
+11 авг. 2024 - 16:54:30.530 INFO  c.e.TaskManagementSystemApplication - The following 1 profile is active: "prod"
+11 авг. 2024 - 16:54:31.296 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11 авг. 2024 - 16:54:31.359 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+11 авг. 2024 - 16:54:31.917 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11 авг. 2024 - 16:54:31.927 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11 авг. 2024 - 16:54:31.928 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+11 авг. 2024 - 16:54:32.005 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11 авг. 2024 - 16:54:32.006 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1438 ms
+11 авг. 2024 - 16:54:32.115 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11 авг. 2024 - 16:54:32.215 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+11 авг. 2024 - 16:54:32.256 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11 авг. 2024 - 16:54:32.584 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11 авг. 2024 - 16:54:32.611 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11 авг. 2024 - 16:54:32.827 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6200b644
+11 авг. 2024 - 16:54:32.829 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11 авг. 2024 - 16:54:33.122 WARN  org.hibernate.id.UUIDHexGenerator - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+11 авг. 2024 - 16:54:33.822 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11 авг. 2024 - 16:54:33.967 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11 авг. 2024 - 16:54:34.198 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11 авг. 2024 - 16:54:34.911 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11 авг. 2024 - 16:54:34.946 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+11 авг. 2024 - 16:54:34.947 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+11 авг. 2024 - 16:54:35.614 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11 авг. 2024 - 16:54:35.623 INFO  c.e.TaskManagementSystemApplication - Started TaskManagementSystemApplication in 5.538 seconds (process running for 6.153)

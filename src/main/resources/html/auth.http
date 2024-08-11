@@ -1,0 +1,21 @@
+####Registration
+POST localhost:8080/auth/registration
+Accept-Language: UZ
+Content-Type: application/json
+
+{
+  "fullName": "Sanjarbek Sultanov ",
+  "email": "sanjarbeksultanov2023@gmail.com"
+}
+
+
+### Login
+POST localhost:8080/auth/login
+Accept-Language: UZ
+Content-Type: application/json
+#user
+
+{
+  "email": "sanjardasturchi@gmail.com",
+  "password": "839355"
+}

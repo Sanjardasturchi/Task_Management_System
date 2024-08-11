@@ -1,0 +1,17 @@
+### Create comment
+POST localhost:8080/comment/create
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjQ3MDYsImVtYWlsIjoic2FuamFyZGFzdHVyY2hpQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NTExMDYsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.4i3BBZoczQxDj6vtxDyMGChRL9bOLZ7hgKJaNPxnD81EB0JweXJ3Luk5_FbQul3W1Sr6mHvcT14L-T0_LhRnVg
+Content-Type: application/json
+
+{
+  "taskId": "4028e4179140a464019140a4cb9d0000",
+  "message": "Ajoyib ish"
+}
+
+
+### Get all
+GET http://localhost:8080/comment/getAll?size=1&page=1
+
+### Get all by task id
+GET http://localhost:8080/comment/get_by_taskId/4028e4179140a464019140a4cb9d0000?size=1&page=1

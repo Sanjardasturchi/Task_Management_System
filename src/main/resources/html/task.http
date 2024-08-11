@@ -1,0 +1,56 @@
+#### Task create
+POST localhost:8080/task/create
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjQ3MDYsImVtYWlsIjoic2FuamFyZGFzdHVyY2hpQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NTExMDYsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.4i3BBZoczQxDj6vtxDyMGChRL9bOLZ7hgKJaNPxnD81EB0JweXJ3Luk5_FbQul3W1Sr6mHvcT14L-T0_LhRnVg
+Content-Type: application/json
+
+{
+  "performers": ["4028e417913d042101913d042c940000","4028e417914069ef019140888f6e0000"],
+  "title": "O'chir",
+  "taskStatus": "IN_PROGRESS",
+  "taskPriority": "HIGH"
+}
+
+### Update title
+PUT http://localhost:8080/task/update
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjQ3MDYsImVtYWlsIjoic2FuamFyZGFzdHVyY2hpQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NTExMDYsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.4i3BBZoczQxDj6vtxDyMGChRL9bOLZ7hgKJaNPxnD81EB0JweXJ3Luk5_FbQul3W1Sr6mHvcT14L-T0_LhRnVg
+Content-Type: application/json
+
+{
+  "taskId": "4028e417913d423701913d4a0a910001",
+  "title": "Ali Aliyeva"
+}
+
+### Update Status
+PUT http://localhost:8080/task/update_status
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjAwNDcsImVtYWlsIjoic2FuamFyYmVrc3VsdGFub3YyMDIzQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NDY0NDcsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.ZP7Z3EX5t1kYpVe94RRg_jUiwRuri_ZFNcIhgSIRZbZAwCvXBcVq_6k7p93gRZMh3dDxYXRHFEYn8Q3Ql46o3A
+Content-Type: application/json
+
+{
+  "taskId": "4028e4179141197f01914119f59e0000",
+  "taskStatus": "COMPLETED"
+}
+
+### Update Priority
+PUT http://localhost:8080/task/update_priority
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjAwNDcsImVtYWlsIjoic2FuamFyYmVrc3VsdGFub3YyMDIzQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NDY0NDcsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.ZP7Z3EX5t1kYpVe94RRg_jUiwRuri_ZFNcIhgSIRZbZAwCvXBcVq_6k7p93gRZMh3dDxYXRHFEYn8Q3Ql46o3A
+Content-Type: application/json
+
+{
+  "taskId": "4028e417913d423701913d4a0a910001",
+  "taskPriority": "AVERAGE"
+}
+
+### Delete by id
+DELETE http://localhost:8080/task/delete/4028e4179140c826019140c8859b0000
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjMzNjQ3MDYsImVtYWlsIjoic2FuamFyZGFzdHVyY2hpQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MjM0NTExMDYsImlzcyI6IlRhc2sgTWFuYWdlbWVudCBTeXN0ZW0ifQ.4i3BBZoczQxDj6vtxDyMGChRL9bOLZ7hgKJaNPxnD81EB0JweXJ3Luk5_FbQul3W1Sr6mHvcT14L-T0_LhRnVg
+Accept-Language: UZ
+
+### Get By Owner Id
+GET http://localhost:8080/task/getByOwnerId/4028e417914069ef019140888f6e0000?size=10&page=1
+
+### Get all
+GET http://localhost:8080/task/getAll?size=10&page=1
